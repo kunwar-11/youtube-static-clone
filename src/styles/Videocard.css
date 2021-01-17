@@ -1,0 +1,23 @@
+.videocard {
+    width: 270px;
+    margin-bottom: 40px;
+}
+.videocard__details {
+    display: flex;
+    align-items: center;
+}
+.videocard > img {
+    width: 250px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.videocard__details > .videocard__avatar {
+    margin-right: 15px;
+}
+.videocard__videodetails > h4 {
+    color: rgb(46, 44, 44);
+}
+.videocard__videodetails > p {
+    color: rgb(124, 121, 121);
+}
