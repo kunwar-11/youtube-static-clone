@@ -2,9 +2,9 @@ import React from 'react'
 import '../styles/Sidebar.css'
 import {Home , Whatshot , Subscriptions , VideoLibrary , History , OndemandVideo , WatchLater , ThumbUp , ExpandMore} from '@material-ui/icons'
 import SidebarRow from './SidebarRow'
-function Sidebar() {
+function Sidebar({isSideBar}) {
     return (
-        <div className  = 'sidebar'>
+        <div className  = {`sidebar ${isSideBar ? 'sidebar-active' : ''}`}>
             <SidebarRow selected Icon = {Home} title = 'Home'/>
             <SidebarRow Icon = {Whatshot} title = 'Trending'/>
             <SidebarRow Icon = {Subscriptions} title = 'Subscription'/>
