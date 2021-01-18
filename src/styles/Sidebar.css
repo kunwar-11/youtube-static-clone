@@ -5,6 +5,10 @@
     width: 20%;
     height: 100%;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .sidebar > hr {
     background-color: lightgray;
     height: 1px;

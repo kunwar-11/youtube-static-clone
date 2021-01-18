@@ -2,11 +2,16 @@ import React from 'react'
 import '../styles/Sidebar.css'
 import {Home , Whatshot , Subscriptions , VideoLibrary , History , OndemandVideo , WatchLater , ThumbUp , ExpandMore} from '@material-ui/icons'
 import SidebarRow from './SidebarRow'
+import { NavLink } from 'react-router-dom'
 function Sidebar({isSideBar}) {
     return (
         <div className  = {`sidebar ${isSideBar ? 'sidebar-active' : ''}`}>
-            <SidebarRow selected Icon = {Home} title = 'Home'/>
-            <SidebarRow Icon = {Whatshot} title = 'Trending'/>
+            <NavLink to = '/' activeClassName = 'selected'>
+                <SidebarRow selected Icon = {Home} title = 'Home'/>
+            </NavLink>
+            <NavLink to = '/trending' activeClassName = 'selected'>
+                <SidebarRow Icon = {Whatshot} title = 'Trending'/>
+            </NavLink>
             <SidebarRow Icon = {Subscriptions} title = 'Subscription'/>
             <hr/>
             <SidebarRow  Icon = {VideoLibrary} title = 'Library'/>

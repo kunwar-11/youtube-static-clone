@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 20px;
     background-color: white;
-    width: 95%;
+    width: 100%;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -17,6 +17,7 @@
 .header__logo{
     height: 25px;
     object-fit: contain;
+    cursor: pointer;
     /* margin-left: 20px; */
 }
 .header__input {
@@ -30,19 +31,29 @@
     border: none;
     outline: none;
 }
+.header__input > a {
+    height: 24px;
+}
 .header__searchIcon {
     width: 50px !important;
     background-color: #fafafa;
     border-left: 1px solid lightgray;
     color: gray;
+    cursor: pointer;
+}
+.header__searchIcon:hover {
+    font-weight: bold !important;
+    color: rgb(0, 0, 0);
 }
 .header__icons {
     display: flex;
     align-items: center;
     margin-left: 10px;
+    margin-right: 50px;
 }
 .header__icon {
     margin-right: 10px;
+    cursor: pointer;
 }
 .header__icon:hover {
     color: red;
@@ -80,6 +91,9 @@
     .header__usericon {
         margin-right: 7px;
     }
+    .header__icons {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width : 376px) {
@@ -89,6 +103,9 @@
     .header__logo {
         height: 35px;
         margin-left: 0px;
+    }
+    .header__icons {
+        margin-right: 0;
     }
 }
 @media screen and (max-width : 321px) {
@@ -107,5 +124,8 @@
     }
     .header__usericon {
         margin-right: 4px !important;
+    }
+    .header__icons {
+        margin-right: 0;
     }
 }
