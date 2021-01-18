@@ -1,6 +1,7 @@
 .videocard {
     width: 270px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 .videocard__details {
     display: flex;
@@ -11,7 +12,11 @@
     height: 140px;
     margin-bottom: 10px;
 }
-
+.videocard__videodetails > .videocard__channelname:hover {
+    color: rgb(116, 113, 113);
+    cursor: pointer;
+    font-weight: bold;
+}
 .videocard__details > .videocard__avatar {
     margin-right: 15px;
 }

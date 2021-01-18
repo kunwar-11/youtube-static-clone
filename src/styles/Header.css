@@ -39,6 +39,7 @@
 .header__icons {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 .header__icon {
     margin-right: 7px;

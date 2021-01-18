@@ -11,7 +11,7 @@ function Videocard({thumbnail , image , title , channel , views , timeStamp}) {
                 </div>
                 <div className="videocard__videodetails">
                 <h4>{title}</h4>
-                <p>{channel}</p>
+                <p className = 'videocard__channelname'>{channel}</p>
                 <p>
                     {views} . {timeStamp}
                 </p>
